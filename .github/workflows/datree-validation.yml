@@ -14,6 +14,8 @@ on:
 jobs:
   configs-validation:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       DATREE_TOKEN: ${{ secrets.DATREE_TOKEN }}
     steps:
